@@ -1,0 +1,2 @@
+# truecu
+While true: cu
