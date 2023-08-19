@@ -1,16 +1,27 @@
-# truecu
+# TRUE-CO
 While true: cu
+
+Backend
+- GOLANG
+    - GINGONIC
+    - GORM
 
 # Install
 
-//Get packaged
+Get golang packages
+```
 go mod tidy
-//docker
+```
+
+Docker Build
+```
 docker-compose up --build
-
+```
 # Run
+Start webservice
+```
 go run main.go
-
+```
 # Endpoints
 GET /jogador/{id}
 POST /jogador
