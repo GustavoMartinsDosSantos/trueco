@@ -20,9 +20,12 @@ func main() {
 	})
 
 	playerController := controllers.NewPlayerController(config.DB)
+	pairController := controllers.NewPairController(config.DB)
 
-	r.GET("/jogador/:id", playerController.GetJogadorByID)
-	r.POST("/jogador", playerController.CreateJogador)
+	r.GET("/player/", playerController.GetAllPlayers)
+	r.GET("/player/:id", playerController.GetPlayerByID)
+	r.POST("/player", playerController.CreatePlayer)
+	r.POST("/pair", pairController.CreatePair)
 
 	r.Run(":8080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 
