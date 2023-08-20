@@ -23,5 +23,8 @@ Start webservice
 go run main.go
 ```
 # Endpoints
-GET /jogador/{id}
-POST /jogador
+- Player
+    - GET /player/{id} Find player ID
+    - GET /player Find all players
+    - POST /player Create player 
+    - POST /pair Create pair

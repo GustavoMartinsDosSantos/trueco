@@ -1,6 +1,7 @@
 package config
 
 import (
+	"github.com/GustavoMartinsDosSantos/trueco/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -15,7 +16,7 @@ func Connect() {
 	}
 
 	// Migrate the schema to create the tables
-	//db.AutoMigrate(&model.Jogador{}, &model.Dupla{}, &model.Partida{})
+	db.AutoMigrate(&models.Player{}, &models.Pair{})
 
 	DB = db
 }
