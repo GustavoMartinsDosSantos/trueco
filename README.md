@@ -30,4 +30,5 @@ go run main.go
     - GET /player/{id} Find player ID
     - GET /player Find all players
     - POST /player Create player 
+- Pair
     - POST /pair Create pair
