@@ -1,5 +1,8 @@
 # TRUE-CO
-While true: cu
+Gerenciador de truco corporativo.
+- Cadastro de jogadores
+- Cadastro de duplas
+- Partidas e apostas
 
 Backend
 - GOLANG
